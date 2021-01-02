@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: hsl(229, 57%, 11%);
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+}
+.data-left-counter{
+    position: absolute;
+    top: 38.5%;
+    left: 57.5%;
+    width: 13%;
+    height: 8.5%;
+    background: #fff;
+    border-radius: 5px;
+    z-index: 111111111;
+}
+.data-left-counter-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.triangle{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(28%, 39%) rotate(153deg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: -1;
+}
+.data{
+    color: hsl(229, 7%, 55%);
+    font-size: 20px;
+}
+.data span{
+    font-size: 30px;
+    color: #000;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('bg-desktop.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.company-details{
+    height: 11.5rem;
+    width: 17.5rem;
+    background: hsl(228, 56%, 26%);
+    border-radius: .3rem;
+    border-top-right-radius: 5.75rem;
+    box-shadow: -11px 20px 20px 3px rgba(0, 0, 0, 0.199);
+}
+.company-details-inner{
+    padding: 1.75rem 0 0 2rem;
+}
+.logo{
+    margin-bottom: 1.75rem;
+}
+.option{
+    padding: 9.5px;
+    background: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    color: hsl(228, 56%, 26%);
+    cursor: pointer;
+    margin-right: 10px;
+}
+.usage-details{
+    height: 11.5rem;
+    width: 31.5rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.data-left{
+    width: 100%;
+    height: 65%;
+    background: hsl(228, 56%, 26%);
+    border-radius: .3rem;
+    box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.199);
+}
+.info{
+    font-size: 14px;
+    color: hsl(229, 7%, 55%);
+    font-weight: 400 !important;
+    letter-spacing: 1.5px;
+    padding: 1.75rem 0 0 2rem;
+    margin-bottom: 12.5px;
+}
+span{
+    color: #fff;
+    letter-spacing: 3.5px;
+    font-weight: 700 !important;
+}
+.bar{
+    height: 15px;
+    width: 80%;
+    border-radius: 15px;
+    background: hsl(229, 57%, 11%);
+    margin-left: 2.25rem;
+}
+.bar-line{
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 15px;
+    position: relative;
+}
+.indicator{
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: translate(-50%, -55%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+}
+.bar-deatils{
+    font-size: 10px;
+    margin-top: 7.5px;
+    margin-left: 2.10rem;
+    width: 82%;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-weight: 500 !important;
+}
+@media screen and (max-width: 1200px){
+    .data-left-counter{
+        width: 17.5%;
+    }
+}
+@media screen and (max-width: 1000px){
+    *{
+        overflow: hidden;
+    }
+    .hero{
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+    }
+    .triangle{
+        display: none;
+    }
+    .usage-details{
+        margin-left: initial;
+    }
+    .company-details{
+        width: 31.5rem;
+    }
+    .data-left-counter{
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+@media screen and (max-width: 900px){
+    .data-left-counter{
+        width: 25%;
+    }
+    .data-left{
+        height: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .info{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 700px){
+    .data-left-counter{
+        width: 30%;
+    }
+    .data{
+        font-size: 17.5px;
+    }
+}
+@media screen and (max-width: 580px){
+    .usage-details{
+        width: 80%;
+    }
+    .info{
+        text-align: center;
+        padding: 0;
+    }
+    .company-details{
+        width: 80%;
+    }
+    .data-left-counter{
+        width: 35%;
+    }
+    .bar{
+        margin-left: 0;
+    }
+    .bar-deatils{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 450px){
+    .usage-details{
+        width: 90%;
+    }
+    .company-details{
+        width: 90%;
+    }
+    .data-left-counter{
+        width: 40%;
+        height: 7%;
+    }
+    .data span{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 400px){
+    .hero{
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background: url('bg-mobile.png');
+    }
+}
