@@ -11,6 +11,9 @@ body{
     font-family: 'Raleway', sans-serif;
     user-select: none;
 }
+i{
+    color: hsl(228deg 40% 54%) !important;
+}
 .data-left-counter{
     position: absolute;
     top: 38.5%;
@@ -169,7 +172,7 @@ span{
         width: 31.5rem;
     }
     .data-left-counter{
-        top: 70%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%);
     }
